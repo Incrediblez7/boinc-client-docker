@@ -1,31 +1,11 @@
-# Ubuntu Base
-docker build -t boinc/client:base-ubuntu -f Dockerfile.base-ubuntu .
-docker push boinc/client:base-ubuntu
+docker build -t incrediblez7/boinc:v2 -f Dockerfile.nvidia.v11_2 .
+docker push incrediblez7/boinc:v2
 
-# Alpine Base
-docker build -t boinc/client:base-alpine -f Dockerfile.base-alpine .
-docker push boinc/client:base-alpine
+docker build -t incrediblez7/boinc:v3 -f Dockerfile.nvidia.v11_3 .
+docker push incrediblez7/boinc:v3
 
-# Nvidia
-docker build -t boinc/client:nvidia -f Dockerfile.nvidia .
-docker push boinc/client:nvidia
+docker build -t incrediblez7/boinc:v4 -f Dockerfile.nvidia.v11_4 .
+docker push incrediblez7/boinc:v4
 
-# AMD
-docker build -t boinc/client:amd -f Dockerfile.amd .
-docker push boinc/client:amd
-
-# Intel
-docker build -t boinc/client:intel -f Dockerfile.intel .
-docker push boinc/client:intel
-
-# Intel Legacy
-docker build -t boinc/client:intel-legacy -f Dockerfile.intel-legacy .
-docker push boinc/client:intel-legacy
-
-# Multi GPU
-docker build -t boinc/client:multi-gpu -f Dockerfile.multi-gpu .
-docker push boinc/client:multi-gpu
-
-# VirtualBox
-docker build -t boinc/client:virtualbox -f Dockerfile.virtualbox .
-docker push boinc/client:virtualbox
+docker build -t incrediblez7/boinc:v6 -f Dockerfile.nvidia.v11_6 .
+docker push incrediblez7/boinc:v6
